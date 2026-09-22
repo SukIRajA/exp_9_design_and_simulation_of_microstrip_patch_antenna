@@ -9,7 +9,7 @@ Design and Simulation of a Microstrip Patch Antenna using using Ansys HFSS
 
 To design and simulate a rectangular microstrip patch antenna at a specified resonant frequency using Ansys HFSS, and to study its return loss, VSWR, bandwidth, gain and radiation pattern.
 
-## Software Used 
+## Software Used
 
 Ansys HFSS (High Frequency Structure Simulator)
 
@@ -106,55 +106,4 @@ This experiment uses the **inset microstrip line feed** (or coaxial probe feed, 
    - Assign the outer faces of the air box as a **Radiation Boundary**.
 8. **Set up the analysis:**
    - Add a **Solution Setup** with the solution frequency equal to f_r.
-   - Add a **Frequency Sweep** (Interpolating/Fast) covering the band of interest.
-9. **Add far-field reports:**
-   - Insert a **Far Field Setup** (Infinite Sphere) for the 2-D and 3-D radiation patterns.
-10. **Validate and run the simulation** (Validation Check → Analyze All).
-11. **Post-process the results:**
-    - Plot **S11 (return loss)** vs frequency and note the resonant frequency and −10 dB bandwidth.
-    - Plot **VSWR** vs frequency.
-    - Plot the **2-D E-plane and H-plane** radiation patterns and the **3-D gain pattern**.
-    - Note the **gain**, **directivity** and **radiation efficiency** at resonance.
-
----
-
-## Observations
-
-*(Include your own table / plots relevant to the experiment.)*
-
-
-
-### Graphs
-
-
-<img width="1200" height="1600" alt="WhatsApp Image 2026-09-19 at 10 38 51 AM (3)" src="https://github.com/user-attachments/assets/a447add3-1c4a-4557-a060-7a0d8ca02438" />
-<img width="1200" height="1600" alt="WhatsApp Image 2026-09-19 at 10 38 51 AM (4)" src="https://github.com/user-attachments/assets/7e785f3b-e1ce-409d-bc76-ff9a62f8e3a2" />
-
-
-
----
-
-## Precautions
-
-1. Ensure the air box / radiation boundary is at least λ/4 away from the patch structure on all sides.
-2. Use a fine mesh near the feed point and patch edges for accurate convergence.
-3. Verify the substrate material properties (ε_r, loss tangent, thickness) before running the simulation.
-4. Check the port impedance and de-embedding settings before reading S11/VSWR values.
-5. Validate the geometry (no overlapping or unassigned boundaries) before analysis.
-
-## Result
-
-Resonant Frequency = GHz  
-
-Return loss = dB
-
-VSWR = 
-
-Gain = 
-
-
-## Conclusion
-
-A rectangular microstrip patch antenna was designed and simulated at ______ GHz using Ansys HFSS.
-
-
+   - Add a **Frequency Swe
